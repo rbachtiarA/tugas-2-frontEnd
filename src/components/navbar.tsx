@@ -26,6 +26,9 @@ export default function Navbar() {
     const handleActiveLinkMobile = (pathRef: string) => {
         return `p-2 hover:bg-[#77805c] ${pathRef === pathName? 'bg-[#77805c] pointer-events-none' : ''}`
     }
+
+    console.log(pathName);
+    
   return (
     <nav className='md:text-lg fixed top-0 w-full h-auto md:p-5 z-50  bg-[rgb(181,193,142)]/50 shadow-md backdrop-blur-sm'>
         
