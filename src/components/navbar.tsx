@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import LogoBrand from './logo/logoBrand'
 import Logo from './logo/logo'
 import { usePathname } from 'next/navigation'

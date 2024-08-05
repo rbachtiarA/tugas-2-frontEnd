@@ -1,3 +1,4 @@
+import Carousel from '@/components/carousel'
 import { Montserrat } from 'next/font/google'
 import Image from 'next/image'
 import React from 'react'
@@ -29,7 +30,9 @@ export default function page() {
                     </div>
                 </div>
 
-                <div></div>
+                <div>
+                    
+                </div>
             </div>
         </section>
 
