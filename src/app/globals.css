@@ -40,3 +40,28 @@ body {
 body {
   background-color: #EADBC8;
 }
+
+.lemon {
+  background-color: rgb(252, 242, 158);
+}
+
+.ginger {
+  background-color: rgb(192, 117, 98);
+}
+
+.tea {
+  background-color: rgb(20, 105, 20);
+}
+
+.orange {
+  background-color: orange;
+}
+
+.lavender {
+  background-color: lavender;
+}
+
+.peppermint {
+  background-color: rgb(20, 126, 94);
+}
+
