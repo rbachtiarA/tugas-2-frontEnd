@@ -39,9 +39,9 @@ export default function Footer() {
           <div>
             <strong>Let&apos;s stay in touch</strong>
             <p>Sign up for exclusive offers, original stories, events and more.</p>
-            <div className='flex items-center'>
-              <input type="text" placeholder='Email Address'/>
-              <button type='submit' className='bg-white'>
+            <div className='flex items-center box-content m-1'>
+              <input type="text" placeholder='Email Address' className='peer outline-none py-1 px-1 focus:border-2 focus:border-r-0 border-black '/>
+              <button type='submit' className='bg-white peer-focus:border-2 peer-focus:border-l-0 border-black '>
                 <Image
                 src={'/submit-arrow.svg'}
                 alt='submit'

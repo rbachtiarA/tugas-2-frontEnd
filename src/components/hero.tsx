@@ -12,10 +12,10 @@ export default function Hero() {
   return (
     <section id='main' className={montserrat.className}>
 
-            <div className='w-full h-[100vh] opacity-100'>
+            <div className='relative w-full pt-[70px] md:pt-[92px]'>
                 <Image
                 src={'/pexels-mareefe-672051.jpg'}
-                alt='Freepik Image - Mountain'
+                alt='Arranged Vial of Essential Oil'
                 width={0}
                 height={0}
                 sizes='100%'
@@ -26,7 +26,7 @@ export default function Hero() {
                 <div className='absolute flex items-center top-0 left-0 w-full h-full'>
                     <div className='rounded-lg bg-black bg-opacity-40 backdrop-blur-sm p-10 md:w-2/5'>
                         <div className='text-xl md:text-3xl lg:text-4xl font-extrabold text-white' >
-                            The Most <span className='md:block text-transparent md:text-3xl lg:text-5xl bg-gradient-to-br from-gray-200 to-[#FFDE4D] bg-clip-text'>Reliable & Quality Product Aromatic Oils </span> In Indonesia
+                            The Most <span className='box-decoration-clone md:block text-transparent md:text-3xl lg:text-5xl bg-gradient-to-br from-gray-200 to-[#FFDE4D] bg-clip-text'>Reliable & Quality Product Aromatic Oils </span> In Indonesia
                         </div>
 
                         <div className='text-white mt-5'>
@@ -34,15 +34,9 @@ export default function Hero() {
                         </div>
 
                         <div className='flex justify-end mt-5'>
-                            <Link href={'/products'} className='flex w-[190px] py-2 pl-4 pr-2 bg-[#d1dfa4] rounded-2xl'> 
-                                <span className='font-semibold'>See Our Product</span>
-                                <Image 
-                                className='ml-2'
-                                src={'/submit-arrow.svg'}
-                                alt='arrow'
-                                width={16}
-                                height={16}
-                                />
+                            <Link href={'/products'} className="flex w-[190px] py-2 pl-8 md:hover:pl-5 bg-[#d1dfa4] transform duration-300 rounded-2xl active:bg-[#5e6449] group"> 
+                                <span className='font-semibold md:after:opacity-0 md:after:content-["_→"] md:after:text-right md:group-hover:after:opacity-100 transition duration-300'>See Our Product</span>
+                                
                             </Link>
                             
                         </div>
