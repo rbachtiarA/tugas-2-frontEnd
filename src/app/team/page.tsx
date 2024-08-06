@@ -35,7 +35,7 @@ export default async function Page() {
   const data = await getEmployees()  
   
   return (
-    <main className='mt-[92px]'>
+    <main className='pt-[92px]'>
         <div className={`${kanit.className} text-center pt-8`} > 
           <p className='text-5xl'>Meet our hardworker team</p>
           <p className='font-light'>Who makes our company always reliable</p>
