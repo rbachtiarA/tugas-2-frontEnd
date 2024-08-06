@@ -22,8 +22,8 @@ export default function ProductCard(data: ProductData) {
         />
 
         <div className='group flex flex-wrap gap-2'>
-            {data.product.tags.map((tag) => (
-                <p className='py-1 px-2 rounded-full bg-lime-700 text-white'>{tag}</p>
+            {data.product.tags.map((tag, idx) => (
+                <p key={idx} className='py-1 px-2 rounded-full bg-lime-700 text-white'>{tag}</p>
             ))}
         </div>
 
