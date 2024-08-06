@@ -6,6 +6,7 @@ import { useRef } from 'react'
 import LogoBrand from './logo/logoBrand'
 import Logo from './logo/logo'
 import { usePathname } from 'next/navigation'
+import LogoComplete from './logo/logoComplete'
 
 
 export default function Navbar() {
@@ -33,9 +34,8 @@ export default function Navbar() {
     <nav className='md:text-lg fixed top-0 w-full h-auto md:p-5 z-50  bg-[rgb(181,193,142)]/50 shadow-md backdrop-blur-sm'>
         
         <div className='hidden md:flex justify-between items-center'>
-            <Link href={'/'} className='flex gap-4 items-center'>
-                <Logo />
-                <LogoBrand />
+            <Link href={'/'}>
+                <LogoComplete />
             </Link>
             <div className='flex rounded-full divide-gray-400 bg-gray-100/50'>
                 <Link className={`${handleActiveLinkDesktop('/')}`} href={'/'}>
@@ -60,9 +60,8 @@ export default function Navbar() {
         <div className='md:hidden flex flex-col m-4'>
             <div>
                 <div className='flex flex-row justify-between'>
-                    <Link href={'/'} className='flex mr-12 gap-4 items-center'>
-                        <LogoBrand />
-                        <Logo />
+                    <Link href={'/'} className='flex mr-12'>
+                        <LogoComplete />
                     </Link>
                     <button onClick={() => handleHamburger(navHamburger)}>
                         <Image 
