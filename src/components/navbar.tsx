@@ -31,7 +31,7 @@ export default function Navbar() {
     console.log(pathName);
     
   return (
-    <nav className='md:text-lg fixed top-0 w-full h-auto md:p-5 z-50  bg-[rgb(181,193,142)]/50 shadow-md backdrop-blur-sm'>
+    <nav className='md:text-lg fixed top-0 w-full md:p-5 z-50  bg-[rgb(181,193,142)]/50 shadow-md backdrop-blur-sm'>
         
         <div className='hidden md:flex justify-between items-center'>
             <Link href={'/'}>
@@ -77,10 +77,10 @@ export default function Navbar() {
 
             <div className='' ref={navHamburger} hidden>
                 <div className='flex flex-col divide-y-2 divide-[#77805c] p-2'>
-                    <Link className={handleActiveLinkMobile('/')} href={'/'}>Home</Link>
-                    <Link className={handleActiveLinkMobile('/about')} href={'/about'}>About Us</Link>
-                    <Link className={handleActiveLinkMobile('/products')} href={'/products'}>Products</Link>
-                    <Link className={handleActiveLinkMobile('/team')} href={'/team'}>Team</Link>
+                    <Link className={handleActiveLinkMobile('/')} href={'/'} onClick={() => handleHamburger(navHamburger)}>Home</Link>
+                    <Link className={handleActiveLinkMobile('/about')} href={'/about'} onClick={() => handleHamburger(navHamburger)}>About Us</Link>
+                    <Link className={handleActiveLinkMobile('/products')} href={'/products'} onClick={() => handleHamburger(navHamburger)}>Products</Link>
+                    <Link className={handleActiveLinkMobile('/team')} href={'/team'} onClick={() => handleHamburger(navHamburger)}>Team</Link>
                     <Link href={'/contact'} className='mt-4 w-1/2 mx-auto text-center bg-white rounded-lg shadow-md hover:shadow-lg font-semibold border-none'>
                         Join Us Now
                     </Link>
