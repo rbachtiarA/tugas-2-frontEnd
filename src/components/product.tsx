@@ -1,3 +1,4 @@
+'use server'
 const base_url = process.env.BASE_URL_CONTENTFUL
 const space_id = process.env.ID_SPACES
 const token = process.env.TOKEN_CONTENTFUL
