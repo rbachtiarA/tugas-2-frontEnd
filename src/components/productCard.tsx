@@ -2,32 +2,42 @@ import convertMoney from '@/app/lib/moneyChanger'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Rating from './rating'
 
 export default function ProductCard(data: ProductData) {
     const bg = 'lemon'
   return (
-    <div className='flex flex-col justify-between gap-4 w-[330px] bg-zinc-500/50 p-4'>
-        <div className='text-center'>
-            <strong>{data.product.name}</strong>
+    <div className='flex flex-col justify-between gap-4 w-[330px]  p-4'>
+        
+
+        <div className='group shadow-lg'>
+            <div style={{background: `url(${data.product.sideImages})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} 
+            className='rounded-xl'>
+                <Image
+                src={`https:${data.product.images}`}
+                alt={data.product.name}
+                width={0}
+                height={0}
+                sizes='100vw'
+                style={{width: '100%', height:'auto'}}
+                className={`${data.product.bgColor} rounded-xl transition duration-300 group-hover:opacity-0`}
+                />
+            </div>
         </div>
 
-        <Image 
-        src={`https:${data.product.images}`}
-        alt={data.product.name}
-        width={0}
-        height={0}
-        sizes='100vw'
-        style={{width: '100%', height:'auto'}}
-        className={`${data.product.bgColor} rounded-xl`}
-        />
-
+        <div className=''>
+            <strong>{data.product.name}</strong>
+        </div>
         <div className='group flex flex-wrap gap-2'>
             {data.product.tags.map((tag, idx) => (
                 <p key={idx} className='py-1 px-2 rounded-full bg-lime-700 text-white'>{tag}</p>
             ))}
         </div>
 
-        <div>
+        <Rating star={data.product.rating} />
+        
+
+        <div className='text-sm italic text-right'>
             <p>Price: <span>{convertMoney(data.product.price)}</span></p>
         </div>
 

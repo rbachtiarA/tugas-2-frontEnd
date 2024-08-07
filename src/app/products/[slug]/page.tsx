@@ -1,9 +1,13 @@
+import { getProductDataBySlug } from '@/components/product'
 import React from 'react'
 
-export default function page() {
+export default async function page({ params }: {params: { slug: string}}) {
+
+  const data: ContentfulProduct = await getProductDataBySlug(params.slug)
+  
   return (
     <div className='pt-[70px] md:pt-[92px]'>
-        this is slug
+        {data.fields.name}
     </div>
   )
 }

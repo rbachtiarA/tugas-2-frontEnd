@@ -1,34 +1,16 @@
+import { getProductData } from '@/components/product';
 import ProductCard from '@/components/productCard'
 import React from 'react'
-import resolveResponse from 'contentful-resolve-response';
 
-const _API = {
-      BASE: 'https://cdn.contentful.com',
-      ID: 'ng3z32cq24jy',
-      TOKEN: '9zlCpeoGqISPt0RqQfpGYN1DvJhLk8h8OQnIJCYtkjY'
-}
-
-async function getProductData() {
-  const res = await fetch(`${_API.BASE}/spaces/${_API.ID}/environments/master/entries?access_token=${_API.TOKEN}&content_type=product`, {next :{ revalidate: 100}})
-  const data = await res.json()
-  
-  const response = {
-    items: data.items,
-    includes: data.includes
-  }
-
-  const items = resolveResponse(response)
-  
-  return items
-} 
 
 export default async function page() {
 
   const data = await getProductData()
   
   return (
-    <section className='pt-[100px] md:pt-[120px] pb-16 h-full'>
-      <div className='flex flex-wrap w-4/5 mx-auto gap-4 items-center'>
+    <section className='pt-[100px] md:pt-[120px] pb-16 h-full flex flex-col justify-center items-center'>
+      <h1 className='text-3xl'>Our Products</h1>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center'>
         {data.map((productData:any) =>
           {
               const product:Product = {

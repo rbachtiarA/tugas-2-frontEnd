@@ -5,7 +5,7 @@ import LogoComplete from './logo/logoComplete'
 
 export default function Footer() {
   return (
-    <footer className='flex flex-wrap p-8 gap-8 justify-around w-full bg-[#C7B7A3]'>
+    <footer className='flex flex-wrap p-8 gap-8 justify-around w-full h-full bg-[#C7B7A3]'>
         <div>
           <LogoComplete />
         </div>

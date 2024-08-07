@@ -35,3 +35,26 @@ interface Product {
     rating: number
 
 }
+
+interface ContentfulProduct {
+    sys: { id:  number | null | undefined; }; 
+    fields: {
+        name: string;  
+        slug: string;
+        image: { fields: 
+            { file: 
+                { url: string; }; 
+            }; 
+        };
+        sideImage: { fields: 
+            { file: 
+                { url: string; }; 
+            }; 
+        };
+        description: string;
+        tags: string[];
+        suggest: string[];
+        price: number;
+        rating: number;
+    }
+}

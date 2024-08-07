@@ -42,26 +42,26 @@ body {
 }
 
 .lemon {
-  background-color: rgb(252, 242, 158);
+  background: linear-gradient(0deg, rgba(255,238,93,1) 0%, rgba(252,242,158,1) 100%);
 }
 
 .ginger {
-  background-color: rgb(192, 117, 98);
+  background: linear-gradient(0deg, rgba(201,80,49,1) 0%, rgba(192,117,98,1) 100%);;
 }
 
 .tea {
-  background-color: rgb(20, 105, 20);
+  background: linear-gradient(0deg, rgba(20,105,20,1) 0%, rgba(71,131,71,1) 100%);
 }
 
 .orange {
-  background-color: orange;
+  background: linear-gradient(0deg, rgba(238,154,0,1) 0%, rgba(255,209,125,1) 100%);
 }
 
 .lavender {
-  background-color: lavender;
+  background: linear-gradient(0deg, rgba(231,170,255,1) 0%, rgba(239,199,255,1) 100%);
 }
 
 .peppermint {
-  background-color: rgb(20, 126, 94);
+  background: linear-gradient(0deg, rgba(20,126,94,1) 0%, rgba(27,164,123,1) 100%);
 }
 
