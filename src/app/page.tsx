@@ -1,6 +1,7 @@
 import Carousel from '@/components/carousel'
 import CompanyTimeline from '@/components/companyTimeline'
 import Hero from '@/components/hero'
+import Highlight from '@/components/highlight'
 import { Montserrat } from 'next/font/google'
 import Image from 'next/image'
 import React from 'react'
@@ -19,7 +20,7 @@ export default function page() {
   return (
     <>
         <Hero />
-        <CompanyTimeline />
+        <Highlight />
     </>
     
   )
