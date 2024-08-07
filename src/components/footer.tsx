@@ -83,7 +83,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <Link href={'/ref'}>
+              <Link href={'/reference'}>
                 Reference Materials
               </Link>
             </div>
