@@ -1,6 +1,6 @@
-const base_url = process.env.BASE_URL_CONTENTFUL
-const space_id = process.env.ID_SPACES
-const token = process.env.TOKEN_CONTENTFUL
+const base_url = process.env.NEXT_PUBLIC_BASE_URL_CONTENTFUL
+const space_id = process.env.NEXT_PUBLIC_ID_SPACES
+const token = process.env.NEXT_PUBLIC_TOKEN_CONTENTFUL
 import resolveResponse from 'contentful-resolve-response'
 
 export async function getProductData() {
