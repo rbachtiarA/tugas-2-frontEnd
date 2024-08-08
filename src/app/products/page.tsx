@@ -1,6 +1,7 @@
-import { getProductData } from '@/components/product';
+
 import ProductCard from '@/components/productCard'
 import React from 'react'
+import { getProductData } from '../lib/product';
 
 
 export default async function page() {
@@ -8,7 +9,7 @@ export default async function page() {
   const data = await getProductData()
   
   return (
-    <section className='pt-[100px] md:pt-[120px] pb-16 h-full flex flex-col justify-center items-center'>
+    <section className='py-16 h-full flex flex-col justify-center items-center'>
       <h1 className='text-3xl'>Our Products</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center'>
         {data.map((productData:any) =>

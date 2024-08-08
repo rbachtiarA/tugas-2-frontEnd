@@ -12,10 +12,19 @@ export default function Footer() {
         
         <div>
           <strong>About Us</strong>
+          <ul>
+            <li>
+              <Link href={'/about'} className='hover:underline'>Our Vision</Link>
+            </li>
+          </ul>
         </div>
         <div>
           <strong>Product</strong>
-
+          <ul>
+            <li>
+              <Link href={'/product'} className='hover:underline'>Essential Oils</Link>
+            </li>
+          </ul>
         </div>
         <div>
           <strong>Teams</strong>

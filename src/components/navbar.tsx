@@ -3,8 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef } from 'react'
-import LogoBrand from './logo/logoBrand'
-import Logo from './logo/logo'
+
 import { usePathname } from 'next/navigation'
 import LogoComplete from './logo/logoComplete'
 
@@ -15,6 +14,8 @@ export default function Navbar() {
     const handleHamburger = (e: any) => {
         e.current.hidden = !e.current.hidden
         e.current.classList.toggle('left-10')
+        e.current.classList.toggle('nav-full')
+        
     }
 
     const handleActiveLinkDesktop = (pathRef: string) => {
@@ -29,9 +30,9 @@ export default function Navbar() {
     }
     
   return (
-    <nav className='md:text-lg fixed top-0 w-full md:p-5 z-50  bg-[rgb(181,193,142)]/50 shadow-md backdrop-blur-sm'>
+    <nav className='md:text-lg fixed top-0 w-full z-50 px-4  bg-[rgb(181,193,142)]/50 shadow-md backdrop-blur-sm'>
         
-        <div className='hidden md:flex justify-between items-center'>
+        <div className='hidden md:flex justify-between items-center h-[92px]'>
             <Link href={'/'}>
                 <LogoComplete />
             </Link>
@@ -55,9 +56,9 @@ export default function Navbar() {
             </Link >
         </div>
             
-        <div className='md:hidden flex flex-col m-4'>
+        <div className='md:hidden flex flex-col mx-4'>
             <div>
-                <div className='flex flex-row justify-between'>
+                <div className='flex flex-row justify-between h-[92px]'>
                     <Link href={'/'} className='flex mr-12'>
                         <LogoComplete />
                     </Link>

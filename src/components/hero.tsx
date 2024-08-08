@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section id='main' className={montserrat.className}>
 
-            <div className='relative w-full pt-[70px] md:pt-[92px]'>
+            <div className='relative w-full'>
                 <Image
                 src={'/pexels-mareefe-672051.jpg'}
                 alt='Arranged Vial of Essential Oil'
@@ -23,10 +23,10 @@ export default function Hero() {
                 priority
                 />
 
-                <div className='absolute flex items-center top-0 left-0 w-full h-full'>
-                    <div className='rounded-lg bg-black bg-opacity-40 backdrop-blur-sm p-10 md:w-2/5'>
-                        <div className='text-xl md:text-3xl lg:text-4xl font-extrabold text-white' >
-                            The Most <span className='box-decoration-clone md:block text-transparent md:text-3xl lg:text-5xl bg-gradient-to-br from-gray-200 to-[#FFDE4D] bg-clip-text'>Reliable & Quality Product Aromatic Oils </span> In Indonesia
+                <div className='absolute top-[5%] left-0 h-100vh w-full md:w-2/5'>
+                    <div className='rounded-lg bg-black bg-opacity-40 backdrop-blur-sm p-5 '>
+                        <div className='text-xl md:text-2xl lg:text-3xl font-extrabold text-white' >
+                            The Most <span className='box-decoration-clone md:block text-transparent bg-gradient-to-br from-gray-200 to-[#FFDE4D] bg-clip-text'>Reliable & Quality Product Aromatic Oils </span> In Indonesia
                         </div>
 
                         <div className='text-white mt-5'>
@@ -42,10 +42,6 @@ export default function Hero() {
                         </div>
                     </div>
 
-                </div>
-
-                <div>
-                    
                 </div>
             </div>
         </section>

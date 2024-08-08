@@ -65,3 +65,7 @@ body {
   background: linear-gradient(0deg, rgba(20,126,94,1) 0%, rgba(27,164,123,1) 100%);
 }
 
+.nav-full {
+  height: 100%;
+}
+
