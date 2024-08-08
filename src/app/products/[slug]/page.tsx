@@ -8,7 +8,7 @@ export default async function page({ params }: {params: { slug: string}}) {
   const data: ContentfulProduct = await getProductDataBySlug(params.slug)
   
   return (
-    <div className='pt-[70px] md:pt-[92px]'>
+    <div className=''>
 
       <div className='flex flex-row'>
         <div className='w-1/2'>
