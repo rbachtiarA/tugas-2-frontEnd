@@ -19,22 +19,6 @@ interface TimelineCardData {
         label: string
     }
 }
-interface ProductData {
-    product: Product
-}
-interface Product {
-    name: string,
-    slug: string,
-    images: any,
-    sideImages: any,
-    description: string,
-    tags: string[],
-    suggest: string[],
-    bgColor: string,
-    price: number,
-    rating: number
-
-}
 
 interface ContentfulProduct {
     sys: { id:  number | null | undefined; }; 
@@ -54,6 +38,7 @@ interface ContentfulProduct {
         description: string;
         tags: string[];
         suggest: string[];
+        bgColor: string;
         price: number;
         rating: number;
     }

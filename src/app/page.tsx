@@ -12,10 +12,6 @@ export const metadata = {
   description: 'Producer of Essentials Oil'
 }
 
-const montserrat = Montserrat({
-    weight: '400',
-    subsets:['latin']
-})
 export default function page() {
   return (
     <>
