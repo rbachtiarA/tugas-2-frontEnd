@@ -8,13 +8,14 @@ export default function EmployeeCard({id, name, picture, country}: EmployeeData)
             {name}
         </h2>
 
-        <Image
-        className='rounded-lg' 
-        src={picture}
-        alt={name}
-        width={128}
-        height={128}
-        />
+        <div className='w-[128px] h-[128px] bg-zinc-400 rounded-lg'>
+          <Image 
+          src={picture}
+          alt={name}
+          width={128}
+          height={128}
+          />
+        </div>
 
         <strong className='text-sm'>
             {country}
