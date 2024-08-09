@@ -1,3 +1,4 @@
+import getEmployees from '@/components/employee';
 import EmployeeCard from '@/components/employeeCard';
 import { log } from 'console';
 import { Montserrat, Roboto } from 'next/font/google';
@@ -22,17 +23,8 @@ const roboto = Roboto({
 })
 
 export default async function Page() {
-  async function getEmployees():Promise<any> {
-    const res = await fetch(`https://randomuser.me/api/?results=16`, {next: {revalidate: 1000}})
 
-    if(!res.ok) {
-      throw new Error('failed to fetch data')
-    }
-
-    return res.json()
-  }
-
-  const data = await getEmployees()  
+  const data = await getEmployees()
   
   return (
     <section className=''>
