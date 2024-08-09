@@ -10,9 +10,8 @@ export default function ProductCard(data: ProductData) {
     <div className='flex flex-col justify-between gap-4 w-[330px]  p-4'>
         
 
-        <div className='group shadow-lg'>
-            <div style={{background: `url(${data.product.sideImages})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}} 
-            className='rounded-xl'>
+        <div className='group shadow-lg w-[298px] h-[433px] bg-zinc-300 rounded-xl'>
+            <div className="rounded-xl" style={{background: `url(${data.product.sideImages})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}>
                 <Image
                 src={`https:${data.product.images}`}
                 alt={data.product.name}
