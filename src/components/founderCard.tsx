@@ -10,9 +10,9 @@ export default function FounderCard({ name, position, image, comment}: { name:st
                 <h2 className='text-md font-semibold'>{position}</h2>        
             </div>
             <p className='text-center'>
-                <span className='text-xl'>"</span>
+                <span className='text-xl'>&quot;</span>
                 {comment}
-                <span className='text-xl'>"</span>
+                <span className='text-xl'>&quot;</span>
             </p>
         </div>
 
