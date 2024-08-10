@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function TimelineCard({label, date, content, image}: TimelineCardData) {
   return (
-    <li className="relative mb-6 sm:mb-0">
+    <li className="py-2 relative mb-6 sm:mb-0">
         <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-[rgb(181,193,142)] rounded-full ring-0 ring-white/50 dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                 <svg className="w-2.5 h-2.5 text-[#717958] dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -12,7 +12,7 @@ export default function TimelineCard({label, date, content, image}: TimelineCard
             </div>
             <div className="hidden sm:flex w-full bg-[rgb(181,193,142)] h-0.5 dark:bg-gray-700"></div>
         </div>
-        <div className='lg:flex xl:flex-col'>
+        <div className='xl:h-[450px] lg:flex xl:flex-col xl:justify-between'>
             <div className="mt-3 sm:pe-8">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{label}</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{date}</time>
@@ -25,7 +25,7 @@ export default function TimelineCard({label, date, content, image}: TimelineCard
                 width={128}
                 height={128}
                 sizes='100vw'
-                style={{width: '100%', height: 'auto'}}
+                style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                 />
             </div>
         </div>

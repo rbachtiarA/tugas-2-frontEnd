@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <section className='pt-[70px] md:pt-[92px]'>
+    <section className='w-screen'>
       <CompanyTimeline />
     </section>
   )

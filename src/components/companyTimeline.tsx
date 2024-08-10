@@ -43,11 +43,11 @@ const data = [
 
 export default function CompanyTimeline() {
   return (
-    <div>
-        <div className='mt-8 justify-center flex'>
+    <div className='px-4'>
+        <div className='mt-8 mb-4 justify-center flex'>
             <h1 className='text-3xl'>Our Company History</h1>
         </div>
-        <ol className="py-8 px-8 items-start xl:flex">
+        <ol className="items-start xl:flex">
         
             {data.map((timeline, idx) => (
                 <TimelineCard
