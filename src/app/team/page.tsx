@@ -28,7 +28,7 @@ export const metadata = {
 }
 export default async function Page() {
 
-  const data = await getEmployees()
+  const data = await getEmployees(16)
   
   return (
     <section className=''>
