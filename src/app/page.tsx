@@ -1,5 +1,6 @@
 import Carousel from '@/components/carousel'
 import CompanyTimeline from '@/components/companyTimeline'
+import CompanyVideo from '@/components/CompanyVideo'
 import Hero from '@/components/hero'
 import Highlight from '@/components/highlight'
 import { Montserrat } from 'next/font/google'
@@ -17,6 +18,7 @@ export default function page() {
     <>
         <Hero />
         <Highlight />
+        <CompanyVideo />
     </>
     
   )
