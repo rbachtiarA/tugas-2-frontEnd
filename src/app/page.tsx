@@ -4,7 +4,6 @@ import Hero from '@/components/hero'
 import Highlight from '@/components/highlight'
 import ProductPopular from '@/components/productPopular'
 import ReviewCard from '@/components/reviewCard'
-import React from 'react'
 
 
 export const metadata = {

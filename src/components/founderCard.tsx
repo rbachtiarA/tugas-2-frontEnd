@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 export default function FounderCard({ name, position, image, comment}: { name:string, position:string, image:string, comment:string }) {
   return (

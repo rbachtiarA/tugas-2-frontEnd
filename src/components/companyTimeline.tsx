@@ -1,4 +1,3 @@
-import React from 'react'
 import TimelineCard from './timelineCard'
 
 

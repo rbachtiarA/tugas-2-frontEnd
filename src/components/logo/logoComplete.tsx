@@ -1,4 +1,3 @@
-import React from 'react'
 import LogoBrand from './logoBrand'
 import Logo from './logo'
 

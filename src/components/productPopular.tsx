@@ -1,5 +1,5 @@
+'use client'
 import { getProductDataByRating } from '@/app/lib/product'
-import React from 'react'
 import ProductCardMini from './productCardMini'
 import Link from 'next/link'
 

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Suggest({ suggest }: {suggest:string}) {
     const suggestWithCome = suggest.replaceAll(';',',')
   return (

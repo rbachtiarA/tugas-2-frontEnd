@@ -1,7 +1,6 @@
 import { Montserrat } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const montserrat = Montserrat({
     weight: '400',

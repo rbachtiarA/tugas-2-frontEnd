@@ -1,6 +1,5 @@
 import getEmployees from '@/app/lib/employee'
 import Image from 'next/image'
-import React from 'react'
 
 export default async function ReviewCard() {
   

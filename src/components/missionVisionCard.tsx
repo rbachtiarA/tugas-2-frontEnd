@@ -1,6 +1,5 @@
 import { Titillium_Web } from 'next/font/google'
 import Image from 'next/image'
-import React from 'react'
 
 const tw = Titillium_Web({
     weight: "400",

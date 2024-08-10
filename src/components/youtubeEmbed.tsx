@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function YoutubeEmbed({ link, title }: { link: string, title: string }) {
   return (
     <div className='flex flex-col items-center justify-end w-[300px] md:w-[360px]'>

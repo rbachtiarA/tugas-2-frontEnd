@@ -1,4 +1,3 @@
-import React from 'react'
 import StarGlow from './starGlow'
 import StarNotGlow from './starNotGlow'
 

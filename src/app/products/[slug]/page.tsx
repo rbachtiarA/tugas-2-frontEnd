@@ -2,7 +2,6 @@
 import convertMoney from '@/app/lib/moneyChanger'
 import { getProductDataBySlug } from '@/app/lib/product'
 import Image from 'next/image'
-import React from 'react'
 
 export const metadata = {
   title: 'Essential Nature | Product',

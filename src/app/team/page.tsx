@@ -1,9 +1,6 @@
 
 import EmployeeCard from '@/components/employeeCard';
-import { log } from 'console';
 import { Montserrat, Roboto } from 'next/font/google';
-import Image from 'next/image';
-import React from 'react'
 import getEmployees from '../lib/employee';
 
 const fieldTeam = [

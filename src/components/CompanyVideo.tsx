@@ -1,6 +1,6 @@
-import React from 'react'
+'use client'
 import YoutubeEmbed from './youtubeEmbed'
-import { Lora, Titillium_Web } from 'next/font/google'
+import { Titillium_Web } from 'next/font/google'
 
 const tw = Titillium_Web({
   weight: "400",

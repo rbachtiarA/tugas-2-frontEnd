@@ -1,7 +1,6 @@
 import convertMoney from '@/app/lib/moneyChanger'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import Rating from './rating'
 
 export default function ProductCardMini({ product }: { product:ContentfulProduct }) {    

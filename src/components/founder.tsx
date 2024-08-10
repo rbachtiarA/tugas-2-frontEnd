@@ -1,4 +1,3 @@
-import React from 'react'
 import FounderCard from './founderCard'
 
 const data = [

@@ -1,6 +1,5 @@
 import CompanyTimeline from '@/components/companyTimeline'
 import MissionVision from '@/components/missionVision'
-import React from 'react'
 
 
 export const metadata = {
