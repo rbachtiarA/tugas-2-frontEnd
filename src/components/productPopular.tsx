@@ -1,4 +1,3 @@
-'use client'
 import { getProductDataByRating } from '@/app/lib/product'
 import ProductCardMini from './productCardMini'
 import Link from 'next/link'

@@ -1,4 +1,3 @@
-'use client'
 import YoutubeEmbed from './youtubeEmbed'
 import { Titillium_Web } from 'next/font/google'
 
