@@ -5,6 +5,7 @@ export default function YoutubeEmbed({ link, title }: { link: string, title: str
         <iframe 
         width="100%" height="215" 
         src={link} 
+        loading="lazy"
         title="YouTube video player" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         />
