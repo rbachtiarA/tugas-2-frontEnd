@@ -4,6 +4,8 @@ import Hero from '@/components/hero'
 import Highlight from '@/components/highlight'
 import ProductPopular from '@/components/productPopular'
 import ReviewCard from '@/components/reviewCard'
+import { Suspense } from 'react'
+import Loading from './loading'
 
 
 export const metadata = {
@@ -16,7 +18,9 @@ export default function page() {
     <>
         <Hero />
         <Highlight />
-        <Founder />
+        <Suspense fallback={<Loading />}>
+          <Founder />
+        </Suspense>
         <CompanyVideo />
         <ProductPopular />
         <ReviewCard />
