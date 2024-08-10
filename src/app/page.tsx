@@ -20,7 +20,7 @@ export default function page() {
         <Highlight />
         <Suspense fallback={<Loading />}>
           <Founder />
-          <CompanyVideo />
+          {/* <CompanyVideo /> */}
         </Suspense>
         
         <ProductPopular />
