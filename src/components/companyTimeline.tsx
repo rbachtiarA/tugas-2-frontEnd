@@ -47,7 +47,7 @@ export default function CompanyTimeline() {
         <div className='mt-8 mb-4 justify-center flex'>
             <h1 className='text-3xl'>Our Company History</h1>
         </div>
-        <ol className="items-start xl:flex">
+        <ol className="items-start xl:flex p-2">
         
             {data.map((timeline, idx) => (
                 <TimelineCard
