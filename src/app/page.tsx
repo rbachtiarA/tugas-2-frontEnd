@@ -3,6 +3,7 @@ import CompanyTimeline from '@/components/companyTimeline'
 import CompanyVideo from '@/components/CompanyVideo'
 import Hero from '@/components/hero'
 import Highlight from '@/components/highlight'
+import ReviewCard from '@/components/reviewCard'
 import { Montserrat } from 'next/font/google'
 import Image from 'next/image'
 import React from 'react'
@@ -19,6 +20,7 @@ export default function page() {
         <Hero />
         <Highlight />
         <CompanyVideo />
+        <ReviewCard />
     </>
     
   )
