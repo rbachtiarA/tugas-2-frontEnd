@@ -1,20 +1,26 @@
-import { Roboto, Roboto_Flex } from 'next/font/google'
+import { Roboto_Flex } from 'next/font/google'
 import Image from 'next/image'
 import React from 'react'
+import HighlightCard from './highlightCard'
 
-function handleClassDiv():string {
-
-    return 'w-[150px] md:w-[200px] md:p-4 bg-zinc-500/50 backdrop-blur-sm text-center rounded-xl shadow-xl'
-}
-
-function handleClassH1():string {
-
-    return 'text-sm sm:text-2xl md:text-4xl lg:text-6xl font-bold text-white drop-shadow-xl'
-}
-function handleClassH2():string {
-
-    return 'text-sm sm:text-lg md:text-2xl lg:text-3xl font-semibold text-white drop-shadow-xl'
-}
+const data = [
+    {
+        quantity: 10,
+        label: 'Production Sites'
+    },
+    {
+        quantity: 400,
+        label: 'Distributed Store'
+    },
+    {
+        quantity: 10,
+        label: 'Export Countries'
+    },
+    {
+        quantity: 20,
+        label: 'Products Variant'
+    },
+]
 
 const roboto = Roboto_Flex({
     weight: '400',
@@ -34,25 +40,12 @@ export default function Highlight() {
         className='py-5'
         />
 
-        <div className={`${roboto.className} absolute p-8 w-full top-0 lg:top-[40%] flex flex-wrap justify-around items-center gap-2`}>
-            <div className={handleClassDiv()}>
-                <h1 className={handleClassH1()}>10+</h1>
-                <h2 className={handleClassH2()}>Production Site</h2>
-            </div>
-            <div className={handleClassDiv()}>
-                <h1 className={handleClassH1()}>400+</h1>
-                <h2 className={handleClassH2()}>Distributed Store</h2>
-            </div>
-            <div className={handleClassDiv()}>
-                <h1 className={handleClassH1()}>10+</h1>
-                <h2 className={handleClassH2()}>Export Countries</h2>
-            </div>
-            <div className={handleClassDiv()}>
-                <h1 className={handleClassH1()}>20+</h1>
-                <h2 className={handleClassH2()}>Products Variant</h2>
-            </div>
-
-
+        <div className={`${roboto.className} absolute p-8 w-full top-[10%] lg:top-[32%] flex flex-wrap shrink-0 justify-around items-center gap-2`}>
+            {data.map((card) => (
+                <HighlightCard 
+                quantity={card.quantity}
+                label={card.label} />
+            ))}
         </div>
     </div>
   )
