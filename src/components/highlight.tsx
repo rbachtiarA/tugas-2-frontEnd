@@ -41,8 +41,9 @@ export default function Highlight() {
         />
 
         <div className={`${roboto.className} absolute p-8 w-full top-[10%] lg:top-[32%] flex flex-wrap shrink-0 justify-around items-center gap-2`}>
-            {data.map((card) => (
-                <HighlightCard 
+            {data.map((card, idx) => (
+                <HighlightCard
+                key={idx}
                 quantity={card.quantity}
                 label={card.label} />
             ))}
