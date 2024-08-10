@@ -1,8 +1,4 @@
-import Carousel from '@/components/carousel'
-import CompanyMission from '@/components/companyMission'
 import CompanyTimeline from '@/components/companyTimeline'
-import CompanyVision from '@/components/companyVision'
-import LogoComplete from '@/components/logo/logoComplete'
 import MissionVision from '@/components/missionVision'
 import React from 'react'
 
