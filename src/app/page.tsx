@@ -20,8 +20,9 @@ export default function page() {
         <Highlight />
         <Suspense fallback={<Loading />}>
           <Founder />
+          <CompanyVideo />
         </Suspense>
-        <CompanyVideo />
+        
         <ProductPopular />
         <ReviewCard />
     </>
