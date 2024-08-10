@@ -31,3 +31,17 @@ export async function getProductDataBySlug(slug:string) {
   
   return items[0]
 } 
+
+export async function getProductDataByRating(rating:number) {
+  const res = await fetch(`${base_url}/spaces/${space_id}/environments/master/entries?access_token=${token}&content_type=product&fields.rating=${rating}`, {next :{ revalidate: 100}})
+  const data = await res.json()
+  
+  const response = {
+    items: data.items,
+    includes: data.includes
+  }
+
+  const items = resolveResponse(response)
+  
+  return items
+}

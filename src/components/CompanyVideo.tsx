@@ -1,15 +1,15 @@
 import React from 'react'
 import YoutubeEmbed from './youtubeEmbed'
-import { Lora } from 'next/font/google'
+import { Lora, Titillium_Web } from 'next/font/google'
 
-const lora = Lora({
-    weight: '400',
-    subsets: ['latin']
+const tw = Titillium_Web({
+  weight: "400",
+  subsets: ["latin"]
 })
 
 export default function CompanyVideo() {
   return (
-    <div className={`flex flex-wrap justify-center gap-8 p-4 bg-[#838b66] text-white ${lora.className}`}>
+    <div className={`flex flex-wrap justify-center gap-8 p-4 bg-[#838b66] text-white ${tw.className}`}>
       <YoutubeEmbed 
       link="https://www.youtube.com/embed/lYm6pQU6bEE?si=ImdPK7UN4TKpRBQQ" 
       title="How our company produce essential oil" />

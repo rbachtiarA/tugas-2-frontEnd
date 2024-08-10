@@ -3,6 +3,10 @@ import ProductCard from '@/components/productCard'
 import React from 'react'
 import { getProductData } from '../lib/product';
 
+export const metadata = {
+  title: 'Essential Nature | Product',
+  description: 'Essential Nature products list'
+}
 
 export default async function page() {
 

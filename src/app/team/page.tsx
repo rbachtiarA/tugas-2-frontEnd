@@ -22,7 +22,10 @@ const roboto = Roboto({
   weight: '900',
   subsets: ['latin']
 })
-
+export const metadata = {
+  title: 'Essential Nature | Team',
+  description: 'List of Essential Nature workers'
+}
 export default async function Page() {
 
   const data = await getEmployees()

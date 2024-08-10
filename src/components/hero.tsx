@@ -30,7 +30,7 @@ export default function Hero() {
                         </div>
 
                         <div className='text-white mt-5'>
-                            <p><strong className='text-transparent bg-gradient-to-br from-gray-200 to-[#FFDE4D] bg-clip-text'>Essential Nature</strong> has been become producer of essential oil since 1980 and already have 12 Production site and 400+ supply chain store across sabang to merauke in indonesia.</p>
+                            <p><strong className='text-transparent bg-gradient-to-br from-gray-200 to-[#FFDE4D] bg-clip-text'>Essential Nature</strong> has been become producer of essential oil since 2000 and already have 12 Production site and 400+ supply chain store across sabang to merauke in indonesia.</p>
                         </div>
 
                         <div className='flex justify-end mt-5'>
