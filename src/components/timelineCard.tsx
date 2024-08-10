@@ -18,7 +18,7 @@ export default function TimelineCard({label, date, content, image}: TimelineCard
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{date}</time>
                 <p className="text-base font-normal text-gray-500 dark:text-gray-400">{content}</p>
             </div>
-            <div className='w-[300px] p-4 mx-auto lg:mx-0 bg-zinc-500'>
+            <div className='w-[300px] mx-auto lg:mx-0 bg-zinc-500'>
                 <Image
                 src={image.link}
                 alt={image.label}
